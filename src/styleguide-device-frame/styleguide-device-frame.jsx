@@ -1,14 +1,14 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import StyleguideCell from '../styleguide-cell/styleguide-cell';
-import StyleguideFrame from '../styleguide-iframe/styleguide-iframe';
+import * as React from "react";
+import PropTypes from "prop-types";
+import StyleguideCell from "../styleguide-cell/styleguide-cell";
+import StyleguideFrame from "../styleguide-iframe/styleguide-iframe";
 
-import config from '__GLOBAL__CONFIG__';
+import config from "__GLOBAL__CONFIG__";
 
 const SIZES = {
-    SMALL: 'SMALL',
-    MEDIUM: 'MEDIUM',
-    LARGE: 'LARGE',
+    SMALL: "SMALL",
+    MEDIUM: "MEDIUM",
+    LARGE: "LARGE",
 };
 
 const MapSizeToDimensions = {
@@ -27,7 +27,10 @@ const propTypes = {
 
 function StyleguideDeviceFrame(props) {
     const { children, size, legend, fontSize, isIframe } = props;
-    const Wrapper = isIframe || config.setDeviceFramesAsIframes ? StyleguideFrame : React.Fragment;
+    const Wrapper =
+        isIframe || config.setDeviceFramesAsIframes
+            ? StyleguideFrame
+            : React.Fragment;
 
     return (
         <StyleguideCell

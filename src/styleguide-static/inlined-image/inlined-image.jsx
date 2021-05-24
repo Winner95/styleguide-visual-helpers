@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const propTypes = {
     text: PropTypes.string,
@@ -11,32 +11,32 @@ const propTypes = {
     textColor: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     letterSpacing: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     dominantBaseline: PropTypes.oneOf([
-        'auto',
-        'text-bottom',
-        'alphabetic',
-        'ideographic',
-        'middle',
-        'central',
-        'mathematical',
-        'hanging',
-        'text-top',
+        "auto",
+        "text-bottom",
+        "alphabetic",
+        "ideographic",
+        "middle",
+        "central",
+        "mathematical",
+        "hanging",
+        "text-top",
     ]),
-    textAnchor: PropTypes.oneOf(['start', 'middle', 'end', 'inherit']),
+    textAnchor: PropTypes.oneOf(["start", "middle", "end", "inherit"]),
 };
 
 function InlinedImage(props) {
     const {
         width = 200,
         height = 180,
-        color = 'ccc',
-        text = '',
-        fontFamily = 'Arial, Tahoma',
-        textColor = '969696',
+        color = "ccc",
+        text = "",
+        fontFamily = "Arial, Tahoma",
+        textColor = "969696",
         fontSize = 16,
         fontWeight = 300,
         letterSpacing = 1,
-        dominantBaseline = 'middle',
-        textAnchor = 'middle',
+        dominantBaseline = "middle",
+        textAnchor = "middle",
     } = props;
 
     const placeholderText = text ? text : `${width} x ${height}`;

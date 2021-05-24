@@ -1,22 +1,25 @@
 {
-  "name": "@bumble/styleguide-visual-helpers",
-  "version": "1.0.2",
-  "description": "Collection of helper tools, which is ported from Badoo-styleguide. It is used for visual regression tests. ",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files"
-  },
-  "author": "Bumble",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/cli": "^7.14.3",
-    "@babel/core": "^7.14.3",
-    "@babel/preset-env": "^7.14.2",
-    "@babel/preset-react": "^7.13.13",
-    "@babel/preset-typescript": "^7.13.0"
-  },
-  "dependencies": {
-    "@babel/polyfill": "^7.12.1"
-  }
+    "name": "@bumble/styleguide-visual-helpers",
+    "version": "1.0.3",
+    "description": "Collection of helper tools, which is ported from Badoo-styleguide. It is used for visual regression tests. ",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "files": [
+        "dist",
+        "README.md"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files",
+        "prettier": "npx prettier --tab-width 4 --write ."
+    },
+    "author": "Bumble",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/cli": "^7.14.3",
+        "@babel/core": "^7.14.3",
+        "@babel/preset-env": "^7.14.2",
+        "@babel/preset-react": "^7.13.13",
+        "@babel/preset-typescript": "^7.13.0"
+    }
 }

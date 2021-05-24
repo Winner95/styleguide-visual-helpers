@@ -1,7 +1,7 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import StyleguideGroup from '../styleguide-group/styleguide-group';
-import StyleguideCell from '../styleguide-cell/styleguide-cell';
+import * as React from "react";
+import PropTypes from "prop-types";
+import StyleguideGroup from "../styleguide-group/styleguide-group";
+import StyleguideCell from "../styleguide-cell/styleguide-cell";
 
 const propTypes = {
     children: PropTypes.node,
@@ -18,7 +18,7 @@ function StyleguideDeviceRange(props) {
                 width={375}
                 height={812}
                 border={true}
-                legend={'iPhone X'}
+                legend={"iPhone X"}
             >
                 {children}
             </StyleguideCell>
@@ -27,7 +27,7 @@ function StyleguideDeviceRange(props) {
                 width={414}
                 height={736}
                 border={true}
-                legend={'iPhone 6/7/8 Plus'}
+                legend={"iPhone 6/7/8 Plus"}
             >
                 {children}
             </StyleguideCell>
@@ -36,7 +36,7 @@ function StyleguideDeviceRange(props) {
                 width={375}
                 height={667}
                 border={true}
-                legend={'iPhone 6/7/8'}
+                legend={"iPhone 6/7/8"}
             >
                 {children}
             </StyleguideCell>
@@ -45,7 +45,7 @@ function StyleguideDeviceRange(props) {
                 width={320}
                 height={568}
                 border={true}
-                legend={'iPhone 5s'}
+                legend={"iPhone 5s"}
             >
                 {children}
             </StyleguideCell>

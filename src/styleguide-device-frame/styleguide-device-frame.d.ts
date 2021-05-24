@@ -1,9 +1,9 @@
-import * as React from 'react';
+import * as React from "react";
 
 enum SIZES {
-    SMALL = 'SMALL',
-    MEDIUM = 'MEDIUM',
-    LARGE = 'LARGE',
+    SMALL = "SMALL",
+    MEDIUM = "MEDIUM",
+    LARGE = "LARGE",
 }
 
 export type StyleguideDeviceFrameProps = {

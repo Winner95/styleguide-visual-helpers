@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 
 export type InlinedImageProps = {
     text?: string;
@@ -10,16 +10,16 @@ export type InlinedImageProps = {
     fontWeight?: number | string;
     textColor?: number | string;
     letterSpacing?: number | string;
-    dominantBaseline?: 'auto';
-    'text-bottom';
+    dominantBaseline?: "auto";
+    "text-bottom";
     alphabetic;
     ideographic;
     middle;
     central;
     mathematical;
     hanging;
-    'text-top';
-    textAnchor?: 'start';
+    "text-top";
+    textAnchor?: "start";
     middle;
     end;
     inherit;

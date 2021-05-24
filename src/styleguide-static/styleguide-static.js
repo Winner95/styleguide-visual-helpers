@@ -1,7 +1,7 @@
-import ReactDOMServer from 'react-dom/server';
-import InlinedImage from './inlined-image/inlined-image';
+import ReactDOMServer from "react-dom/server";
+import InlinedImage from "./inlined-image/inlined-image";
 
-const PROVIDER = 'https://via.placeholder.com';
+const PROVIDER = "https://via.placeholder.com";
 
 export default function getImageUrl(options) {
     const { width = 200, height, color, text, inlined = true } = options;
@@ -10,10 +10,10 @@ export default function getImageUrl(options) {
         return ReactDOMServer.renderToString(InlinedImage(options));
     }
 
-    let widthPart = '';
-    let heightPart = '';
-    let colorPart = '';
-    let textPart = '';
+    let widthPart = "";
+    let heightPart = "";
+    let colorPart = "";
+    let textPart = "";
 
     if (width) {
         widthPart = width;

@@ -1,8 +1,8 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import View from '../styleguide-view';
-import Text from '../styleguide-text';
-import config from '__GLOBAL__CONFIG__';
+import * as React from "react";
+import PropTypes from "prop-types";
+import View from "../styleguide-view";
+import Text from "../styleguide-text";
+import config from "__GLOBAL__CONFIG__";
 
 const propTypes = {
     width: PropTypes.string,
@@ -23,23 +23,23 @@ function StyleguidePlaceholder(props) {
         placeholder,
     } = props;
 
-    const placeholderText = placeholder || 'placeholder';
+    const placeholderText = placeholder || "placeholder";
 
     return (
         <View
             style={{
-                width: width || '100%',
-                height: height || '100%',
-                alignItems: 'center',
-                justifyContent: 'center',
-                backgroundColor: backgroundColor || '#fefefe',
+                width: width || "100%",
+                height: height || "100%",
+                alignItems: "center",
+                justifyContent: "center",
+                backgroundColor: backgroundColor || "#fefefe",
             }}
         >
             <Text
                 style={{
                     fontSize,
-                    fontFamily: 'monospace',
-                    color: color || '#777',
+                    fontFamily: "monospace",
+                    color: color || "#777",
                 }}
             >
                 {placeholderText}

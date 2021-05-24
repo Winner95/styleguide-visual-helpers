@@ -1,11 +1,11 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import View from '../styleguide-view';
-import Text from '../styleguide-text';
-import config from '__GLOBAL__CONFIG__';
+import * as React from "react";
+import PropTypes from "prop-types";
+import View from "../styleguide-view";
+import Text from "../styleguide-text";
+import config from "__GLOBAL__CONFIG__";
 
 const Platform = {
-    OS: 'web',
+    OS: "web",
 };
 
 const propTypes = {
@@ -40,7 +40,7 @@ function StyleguideCell(props) {
                         margin: 0,
                         marginBottom: 10,
                         fontSize,
-                        fontFamily: 'monospace',
+                        fontFamily: "monospace",
                     }}
                 >
                     {legend}
@@ -49,16 +49,18 @@ function StyleguideCell(props) {
 
             <View
                 style={{
-                    position: 'relative',
-                    backgroundColor: backgroundColor || 'transparent',
+                    position: "relative",
+                    backgroundColor: backgroundColor || "transparent",
                     width,
                     height,
                     borderWidth: border ? 1 : 0,
-                    borderColor: '#aaa',
-                    borderStyle: 'solid',
-                    overflow: 'auto',
+                    borderColor: "#aaa",
+                    borderStyle: "solid",
+                    overflow: "auto",
                     transform:
-                        Platform.OS === 'web' ? 'translate3d(0, 0, 0)' : [{ translateZ: '0' }],
+                        Platform.OS === "web"
+                            ? "translate3d(0, 0, 0)"
+                            : [{ translateZ: "0" }],
                 }}
             >
                 {children}

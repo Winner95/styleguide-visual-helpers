@@ -1,7 +1,7 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { createPortal } from 'react-dom';
+import * as React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { createPortal } from "react-dom";
 
 const IframeWrapper = styled.div`
     position: relative;
@@ -33,7 +33,7 @@ const StyleguideIFrame = React.memo(
     ({
         children,
         title = `iframe-${Date.now()}`,
-        styleList = [...document.querySelectorAll('style')],
+        styleList = [...document.querySelectorAll("style")],
         ...props
     }) => {
         const [contentRef, setContentRef] = React.useState(null);
@@ -42,10 +42,12 @@ const StyleguideIFrame = React.memo(
 
         if (contentRef) {
             // visual helper to fix some corner cases, when rendered component depend on size of its parent
-            contentRef.contentWindow.document.documentElement.style.height = '100vh';
-            contentRef.contentWindow.document.documentElement.style.width = '100vw';
-            contentRef.contentWindow.document.body.style.height = 'inherit';
-            contentRef.contentWindow.document.body.style.width = 'inherit';
+            contentRef.contentWindow.document.documentElement.style.height =
+                "100vh";
+            contentRef.contentWindow.document.documentElement.style.width =
+                "100vw";
+            contentRef.contentWindow.document.body.style.height = "inherit";
+            contentRef.contentWindow.document.body.style.width = "inherit";
             // hide element during rerender
             contentRef.style.opacity = 0;
         }
@@ -61,14 +63,16 @@ const StyleguideIFrame = React.memo(
                 styleList.map((style) => {
                     const iframeNewStyleElement = style.cloneNode(true);
 
-                    contentRef.contentWindow.document.head.appendChild(iframeNewStyleElement);
-                    contentRef.addEventListener('load', handleLoad);
+                    contentRef.contentWindow.document.head.appendChild(
+                        iframeNewStyleElement
+                    );
+                    contentRef.addEventListener("load", handleLoad);
                 });
             }
 
             return function willUnmount() {
                 if (contentRef) {
-                    contentRef.removeEventListener('load', handleLoad);
+                    contentRef.removeEventListener("load", handleLoad);
                     contentRef.style.opacity = 1;
                 }
             };
@@ -82,14 +86,15 @@ const StyleguideIFrame = React.memo(
                     title={title}
                     ref={setContentRef}
                 >
-                    {mountNode && createPortal(React.Children.only(children), mountNode)}
+                    {mountNode &&
+                        createPortal(React.Children.only(children), mountNode)}
                 </IframeBlock>
             </IframeWrapper>
         );
     }
 );
 
-StyleguideIFrame.displayName = 'Frame';
+StyleguideIFrame.displayName = "Frame";
 StyleguideIFrame.propTypes = propTypes;
 
 export default StyleguideIFrame;
