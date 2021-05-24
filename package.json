@@ -1,6 +1,6 @@
 {
   "name": "@bumble/styleguide-visual-helpers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Collection of helper tools, which is ported from Badoo-styleguide. It is used for visual regression tests. ",
   "main": "index.js",
   "scripts": {
