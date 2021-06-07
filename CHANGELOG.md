@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.4
+
+* add public repo
+
 ## 1.0.3
 
 * add prettier for style
