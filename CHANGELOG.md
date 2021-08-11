@@ -2,11 +2,11 @@
 
 ## 1.0.4
 
-* add public repo
+-   add public repo
 
 ## 1.0.3
 
-* add prettier for style
+-   add prettier for style
 
 ## 1.0.2
 
