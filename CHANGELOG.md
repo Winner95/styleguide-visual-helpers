@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.6
+
+* publish new version
+
 ## 1.0.5
 
 * add noop function
