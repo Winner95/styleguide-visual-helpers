@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.5
+
+* add noop function
+
 ## 1.0.4
 
 * add public repo
