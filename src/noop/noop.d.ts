@@ -1,3 +1,3 @@
-type noop = (...args: any[]) => void;
+declare const noop: (...args: any[]) => void;
 
 export default noop;
