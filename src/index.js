@@ -5,6 +5,7 @@ import StyleguideDeviceRange from "./styleguide-device-range/styleguide-device-r
 import StyleguideGroup from "./styleguide-group/styleguide-group";
 import StyleguidePlaceholder from "./styleguide-placeholder/styleguide-placeholder";
 import getImageUrl from "./styleguide-static/styleguide-static";
+import noop from "./noop/noop";
 
 export {
     StyleguideCell,
@@ -14,4 +15,5 @@ export {
     StyleguideGroup,
     StyleguidePlaceholder,
     getImageUrl,
+    noop,
 };
