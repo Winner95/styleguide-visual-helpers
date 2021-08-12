@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.7
+
+* update readme
+
 ## 1.0.6
 
 * publish new version
