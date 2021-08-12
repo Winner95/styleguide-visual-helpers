@@ -13,6 +13,7 @@ For easier work with different devices / media-queries we introduced several com
 -   `StyleguideDeviceFrame` returns one of predefined frames, based on mobile device aspect-ratio
 -   `StyleguideDeviceGroup` returns set of predefined frames, based on mobile device aspect-ratio
 -   `getImageUrl` returns static image mockup src with provided parameters - as inlined image or as image from [placeholder.com](https://placeholder.com)
+-   `noop` method for adding mock functions in props.
 
 ```js
 import { getImageUrl } from "@bumble/styleguide-visual-helpers";
@@ -34,3 +35,11 @@ module.exports = {
 ```
 
 If you would prefer to setup individualy font-sizes - you can do it for each instance of component.
+
+## How to deploy new version?
+
+There are 3 simple steps to follow:
+
+- `yarn build` or `npm run build`
+- add new version to `package.json` file
+- `npm publish`
